@@ -1,0 +1,13 @@
+def task(string):
+    uppers=string.upper()
+    desired={}
+    for i in uppers:
+        keys=desired.keys()
+        if i not in keys:
+            desired[i]=1
+        else:
+            desired[i]+=1
+    m=sorted(desired.items())
+    return dict(m)
+print(task("UdayaBhaskar"))
+print(task("diwakar"))
